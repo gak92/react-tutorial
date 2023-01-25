@@ -4,6 +4,7 @@ import { Component1 } from './components/Component1';
 import FormComponent from './components/FormComponent';
 import Hello from './components/Hello';
 import Parent from './components/Parent';
+import ReduxTutorial from './components/ReduxTutorial';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Parent />
 
       <FormComponent />
+      <ReduxTutorial />
     </div>
   );
 }
