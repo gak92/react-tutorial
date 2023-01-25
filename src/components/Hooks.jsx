@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 
 const Hooks = () => {
   const [name, setName] = useState("Demo");
@@ -7,6 +7,13 @@ const Hooks = () => {
   const changeImage = () => {
     logo.current.style.transform = "rotate(15deg)";
   }
+
+  useEffect(() => {
+    console.log("Hook component changed");
+    return () => {
+      console.log("hook component unmounted");
+    }
+  }, []);
  
   return (
     <div>
