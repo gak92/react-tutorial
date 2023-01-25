@@ -9,10 +9,10 @@ export class Parent extends Component {
     this.state = props;
   }
 
-  parentHandler = (name) => {
-    console.log("Parent click", name);
+  parentHandler = (e) => {
+    console.log("Parent click", e.target.value);
     this.setState({
-      name:name,
+      name:e.target.value,
     });
   }
 

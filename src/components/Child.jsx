@@ -10,7 +10,8 @@ export class Child extends Component {
   render() {
     return (
       <div>
-        <button onClick={()=>this.props.clickHandler("John")}>Child Button</button>
+        <button onClick={(name)=>this.props.clickHandler("John")}>Child Button</button>
+        <input type="text" onChange={(e)=>this.props.clickHandler(e)} />
       </div>
     )
   }
