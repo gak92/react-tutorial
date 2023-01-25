@@ -1,6 +1,7 @@
 /* eslint-disable */
 import './App.css';
 import { Component1 } from './components/Component1';
+import FormComponent from './components/FormComponent';
 import Hello from './components/Hello';
 import Parent from './components/Parent';
 
@@ -12,6 +13,8 @@ function App() {
 
       <Component1 name="Something" />
       <Parent />
+
+      <FormComponent />
     </div>
   );
 }
